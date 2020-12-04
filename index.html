@@ -13,46 +13,221 @@
     <main>
       <nav class="sidebar">
         <div class="main-nav">
-          <div class="brand padding">
-            <a href="#"><img src="img/logo.svg" alt="spotify logo"></a>
+          <div class="brand padding-nav">
+            <a class="hidden-xs" href="#"><img src="img/logo.svg" alt="spotify logo"></a>
+
+            <a class="visible-xs" href="#"><img src="img/logo-small.svg" alt="spotify logo"></a>
           </div>
 
           <ul class="menu">
-            <li><a><div class="padding"><img src="img/home.svg" alt="home">Home</div></a></li>
-            <li><a><div class="padding"><img src="img/search.svg" alt="search">Cerca</div></a></li>
-            <li><a><div class="padding"><img src="img/libreria.svg" alt="libreria">La tua libreria</div></a></li>
+            <li><a><div class="padding-nav"><img src="img/home.svg" alt="home"><span class="hidden-xs">Home</span></div></a></li>
+            <li><a><div class="padding-nav"><img src="img/search.svg" alt="search"><span class="hidden-xs">Cerca</span></div></a></li>
+            <li><a><div class="padding-nav"><img src="img/libreria.svg" alt="libreria"><span class="hidden-xs">La tua libreria</span></div></a></li>
           </ul>
-          <div class="">
 
-          </div>
+          <div class="playlist padding-nav hidden-xs">
+            <h3>PLAYLIST</h3>
 
-          <div class="playlist">
-            <h3 class="padding">PLAYLIST</h3>
-
-            <button class="padding add" type="button" name="button">Crea Playlist</button>
+            <button class="add hover-white" type="button" name="button">Crea Playlist</button>
 
             <ul>
-              <li class="padding"><a href="https://open.spotify.com/playlist/56Gl4GAVCnnPtkSmWLw7vk">Power</a></li>
-              <li class="padding"><a>Bepi from Vicenza with al...</a></li>
-              <li class="padding"><a>🌵 BALANZA DESERT M...</a></li>
-              <li class="padding"><a>Mondo di gioco</a></li>
-              <li class="padding"><a>Nome Playlist</a></li>
-              <li class="padding"><a>Nome Playlist</a></li>
-              <li class="padding"><a>Nome Playlist</a></li>
+              <li><a href="https://open.spotify.com/playlist/56Gl4GAVCnnPtkSmWLw7vk">Power</a></li>
+              <li><a>Bepi from Vicenza with al...</a></li>
+              <li><a>🌵 BALANZA DESERT M...</a></li>
+              <li><a>Mondo di gioco</a></li>
+              <li><a>Nome Playlist</a></li>
+              <li><a>Nome Playlist</a></li>
+              <li><a>Nome Playlist</a></li>
             </ul>
           </div>
         </div>
 
-        <div class="bot-nav padding">
-          <a href="https://open.spotify.com/downlod"><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i> Installa app</a>
+        <div class="bot-nav padding-nav">
+          <a class="hover-white" href="https://open.spotify.com/download"><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i> <span class="hidden-xs">Installa app</span></a>
+
+          <a href="#">
           <div class="profile-user">
-            <img src="img/user.png" alt="user"> Gabriel Garm
+            <img src="img/user.png" alt="user"> <span class="hidden-xs">Gabriel Garm</span>
           </div>
+          </a>
         </div>
       </nav>
 
-      <div class="main-content">
+      <div class="main-section">
+        <div class="upgrade-bar">
+          <a class="upgrade-btn" href="#">EFFETTUA L'UPGRADE</a>
+        </div>
 
+        <div class="main-content">
+          <nav>
+            <ul>
+              <li class="selected"><a href="#">IN EVIDENZA</a></li>
+              <li><a href="#">PODCAST</a></li>
+              <li><a href="#">CLASSIFICHE</a></li>
+              <li><a href="#">GENERI E MOOD</a></li>
+              <li><a href="#">NUOVE USCITE</a></li>
+              <li><a href="#">SCOPRI</a></li>
+            </ul>
+          </nav>
+
+          <div class="row">
+            <h2>Recently played</h2>
+
+            <div class="playlist-row clearfix">
+              <div class="item">
+                <div class="item-img">
+                  <img src="img/metal-lifting.jpg" alt="playlist cover">
+                </div>
+
+                <h3>Power</h3>
+
+                <p>Di Gabriel Garm</p>
+              </div>
+
+              <div class="item">
+                <div class="item-img">
+                  <img src="img/metal-lifting.jpg" alt="playlist cover">
+                </div>
+
+                <h3>Power</h3>
+
+                <p>Di Gabriel Garm</p>
+              </div>
+
+              <div class="item">
+                <div class="item-img">
+                  <img src="img/metal-lifting.jpg" alt="playlist cover">
+                </div>
+
+                <h3>Power</h3>
+
+                <p>Di Gabriel Garm</p>
+              </div>
+
+              <div class="item">
+                <div class="item-img">
+                  <img src="img/metal-lifting.jpg" alt="playlist cover">
+                </div>
+
+                <h3>Power</h3>
+
+                <p>Di Gabriel Garm</p>
+              </div>
+
+              <div class="item">
+                <div class="item-img">
+                  <img src="img/metal-lifting.jpg" alt="playlist cover">
+                </div>
+
+                <h3>Power</h3>
+
+                <p>Di Gabriel Garm</p>
+              </div>
+
+              <div class="item">
+                <div class="item-img">
+                  <img src="img/metal-lifting.jpg" alt="playlist cover">
+                </div>
+
+                <h3>Power</h3>
+
+                <p>Di Gabriel Garm</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <h2>Recently played</h2>
+
+            <div class="playlist-row clearfix">
+              <div class="item">
+                <div class="item-img">
+                  <img src="img/metal-lifting.jpg" alt="playlist cover">
+                </div>
+
+                <h3>Power</h3>
+
+                <p>Di Gabriel Garm</p>
+              </div>
+
+              <div class="item">
+                <div class="item-img">
+                  <img src="img/metal-lifting.jpg" alt="playlist cover">
+                </div>
+
+                <h3>Power</h3>
+
+                <p>Di Gabriel Garm</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <h2>Recently played</h2>
+
+            <div class="playlist-row clearfix">
+              <div class="item">
+                <div class="item-img">
+                  <img src="img/metal-lifting.jpg" alt="playlist cover">
+                </div>
+
+                <h3>Power</h3>
+
+                <p>Di Gabriel Garm</p>
+              </div>
+
+              <div class="item">
+                <div class="item-img">
+                  <img src="img/metal-lifting.jpg" alt="playlist cover">
+                </div>
+
+                <h3>Power</h3>
+
+                <p>Di Gabriel Garm</p>
+              </div>
+
+              <div class="item">
+                <div class="item-img">
+                  <img src="img/metal-lifting.jpg" alt="playlist cover">
+                </div>
+
+                <h3>Power</h3>
+
+                <p>Di Gabriel Garm</p>
+              </div>
+
+              <div class="item">
+                <div class="item-img">
+                  <img src="img/metal-lifting.jpg" alt="playlist cover">
+                </div>
+
+                <h3>Power</h3>
+
+                <p>Di Gabriel Garm</p>
+              </div>
+
+              <div class="item">
+                <div class="item-img">
+                  <img src="img/metal-lifting.jpg" alt="playlist cover">
+                </div>
+
+                <h3>Power</h3>
+
+                <p>Di Gabriel Garm</p>
+              </div>
+
+              <div class="item">
+                <div class="item-img">
+                  <img src="img/metal-lifting.jpg" alt="playlist cover">
+                </div>
+
+                <h3>Power</h3>
+
+                <p>Di Gabriel Garm</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
