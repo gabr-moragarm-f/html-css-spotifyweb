@@ -215,19 +215,48 @@
 
     <div class="player">
       <div class="now-playing">
-        <img src="img/sinister.jpeg" alt="now playing song">
-        <div class="description">
-          <h4>Sinister</h4>
-          <span>Nome Brano</span>
+        <div class="song">
+          <div class="song-img">
+            <img src="img/sinister.jpeg" alt="now playing song">
+          </div>
+
+          <div class="description">
+            <h4>Sinister</h4>
+
+            <span>Nome Brano</span>
+          </div>
         </div>
-        <div class="">
+
+        <div class="buttons">
           <button type="button" name="button"><i class="fa fa-heart-o hover-white" aria-hidden="true"></i></button>
-          <button type="button" name="button"><i class="fa fa-folder-o hover-white" aria-hidden="true"></i></button>          
+          <button type="button" name="button"><i class="fa fa-folder-o hover-white" aria-hidden="true"></i></button>
         </div>
       </div>
 
       <div class="player-commands">
+        <nav>
+          <i class="fa fa-random" aria-hidden="true"></i>
+          <i class="fa fa-step-backward" aria-hidden="true"></i>
+          <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+          <i class="fa fa-step-forward" aria-hidden="true"></i>
+          <i class="fa fa-repeat" aria-hidden="true"></i>
+        </nav>
 
+        <div class="timepiece">
+          <div class="current-time">
+            0:25
+          </div>
+
+          <div class="time-bar">
+            <div class="time-bar-progress width9perc">
+
+            </div>
+          </div>
+
+          <div class="max-time">
+            4:35
+          </div>
+        </div>
       </div>
 
       <div class="player-settings">
@@ -237,3 +266,9 @@
   </div>
 </body>
 </html>
+<script type="text/javascript">
+  var songname=document.getElementsByTagName('h3')[1].innerHTML;
+  document.getElementsByTagName('h4')[0].innerHTML=songname;
+  var songimg=document.getElementsByClassName('item-img')[0].innerHTML;
+  document.getElementsByClassName('song-img')[0].innerHTML=songimg;
+</script>

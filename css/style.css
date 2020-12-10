@@ -56,6 +56,10 @@ ul{
   display: none;
 }
 
+.inline-block{
+  display: inline-block;
+}
+
 .wrapper{
   width: 100vw;
   height: 100vh;
@@ -77,8 +81,7 @@ main{
   float: left;
 }
 
-.sidebar img,
-.now-playing img{
+.sidebar img{
   height: 100%;
   vertical-align: middle;
 }
@@ -301,28 +304,102 @@ a.upgrade-btn{
 
 .now-playing,
 .player-settings{
-  width: 20%;
+  width: 15%;
 }
 
 .now-playing{
-  padding: 20px 0;
+  padding: 10px 0;
+  display: flex;
+}
+
+.song{
+  display: flex;
+  align-items: center;
+}
+
+.song-img{
+  height: 100%;
+  width: 40%;
+}
+
+.song-img img{
+  width: auto;
+  height: 100%;
 }
 
 .now-playing .description{
-  display: inline-block;
-  vertical-align: middle;
+  width: 60%;
 }
 
 .now-playing .description span{
   font-size: 10px;
 }
 
-.player-commands{
-  width: 60%;
+.song{
+  width: 80%;
 }
 
+.now-playing .buttons{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.player-commands{
+  width: 70%;
+  color: #fff;
+}
+
+.player-commands nav{
+  height: 50%;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.player-commands nav i:nth-child(3){
+  font-size: 40px;
+}
+
+.timepiece{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.time-bar{
+  width: 80%;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #6E6E6E;
+}
+
+.time-bar-progress{
+  height: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.width9perc{
+  width: 9.09%;
+}
 
 /* Media query */
+@media screen and (max-width: 1178px) {
+  .now-playing,
+  .player-settings{
+    width: 20%;
+  }
+
+  .player-commands{
+    width: 60%;
+  }
+}
+
 @media screen and (max-width: 991px) {             /* md */
   .visible-xs{
     display: none;
@@ -340,6 +417,20 @@ a.upgrade-btn{
   .main-section nav li{
     width: calc((100% / 5) - 5px);
     padding: 15px 0;
+  }
+
+  .now-playing,
+  .player-settings{
+    width: 25%;
+  }
+
+  .player-commands{
+    width: 50%;
+  }
+
+  .song-img img{
+    height: auto;
+    width: 100%;
   }
 }
 
@@ -359,6 +450,19 @@ a.upgrade-btn{
   .main-section nav li{
     width: calc((100% / 3) - 5px);
     padding: 15px 0;
+  }
+
+  .player{
+    padding: 0 5px;
+  }
+
+  .song-img{
+    height: auto;
+  }
+
+  .now-playing .buttons{
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -394,6 +498,14 @@ a.upgrade-btn{
 
   .upgrade-bar{
     width: calc(100% - 50px);
+  }
+
+  h4{
+    font-size: 10px;
+  }
+
+  .now-playing .description span{
+    font-size: 8px;
   }
 
 }
